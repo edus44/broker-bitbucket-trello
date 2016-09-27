@@ -1,0 +1,11 @@
+{
+    "listenPort": 3000,
+    "trelloUsername": "",
+    "trelloApiKey": "",
+    "trelloApiToken": "",
+    "_comment":{
+        "trelloUsername": "Trello @username",
+        "trelloApiKey": "https://trello.com/1/appKey/generate",
+        "trelloApiToken": "https://trello.com/1/connect?name=BitbucketBroker&response_type=token&scope=read,write&expiration=never&key={{key}}"
+    }
+}

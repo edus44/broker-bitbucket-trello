@@ -1,0 +1,35 @@
+{
+  "name": "broker-bitbucket-trello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "build-params",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/edus44/broker-bitbucket-trello.git"
+  },
+  "author": "Eduardo Hidalgo H",
+  "license": "ISC",
+  "jshintConfig": {
+    "node": true,
+    "strict": true,
+    "asi": true,
+    "newcap": false,
+    "esnext": true
+  },
+  "homepage": "https://github.com/edus44/broker-bitbucket-trello#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "build-params": "^0.1.13",
+    "express": "^4.14.0",
+    "express-domain-middleware": "^0.1.0",
+    "lodash": "^4.16.2",
+    "moment": "^2.15.1",
+    "morgan": "^1.7.0",
+    "trim": "0.0.1"
+  }
+}
