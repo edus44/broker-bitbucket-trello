@@ -48,12 +48,12 @@ exports.getCommitsFromBody = function(body){
         return {
             type:commit.type,
             date:moment(commit.date).format('DD MMM YYYY HH:mm ZZ'),
-            author : commit.author.raw,
+            author : _.get(commit,'author.raw'),
             message:trim(commit.message),
             hash:commit.hash,
             cards : cards,
-            short:commit.hash.slice(0,7),
-            link:commit.links.html.href,
+            short:_.get(commit,'hash','').slice(0,7),
+            link:_.get(commit,'links.html.href'),
         }
     })
 }
